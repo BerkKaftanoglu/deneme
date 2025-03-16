@@ -1,0 +1,49 @@
+Proje Kapsamı:
+Proje üç farklı boyutta deep learning modelinden ve kullanıcı arayüzünden oluşmaktadır.
+Proje ".png", ".jpg" ve ".jpeg" uzantılı görselleri kabul eder. Fine tuning için ".csv" uzntılı dosyalar gereklidir. 
+Kullanılabilen modeller sunulan 3 modeli kapsar. Ancak modellerin eğitimine yerelde devam edilebilir.
+Kullanıcı arayüzünde resim yükleme, kullanılacak modelleri seçme, modeli/modelleri kullanarak tahmin ettirme ve sonucunu alma, önceden kullanılan resimlere erişme, 
+modeli eğitmek için geri bildirim, csv dosyası yükleyerek fine tuning ve tema değiştirme özellikleri vardır.
+
+Proje Organizasyonu:
+    Hüseyin Yiğit Usta - Derin öğrenme modelinin geliştirilmesi
+    Mehmet Akif Apaydın - Derin öğrenme modelinin geliştirilmesi
+    Berk Kaftanoğlu - Uygulama arayüzünün geliştirilmesi
+
+Hedefler:
+    Verilen görselin sahte veya gerçek olduğunu belirleme
+    Yapılan değerlendirmeleri dosya bilgisi ile bir geçmişte tutma
+    Sunulan modellerden seçilenleri kullanarak değerlendirme
+    Kullanıcının geri bildirimine bağlı modeli eğitme
+    csv dosyası aracılığıyla fine tuning yapma
+    Kullanıcıya kolaylık sağlayan fonksiyonel arayüz
+
+Ana Evreler ve Zamanlama:
+    Requirements Gathering (1 hafta)
+    Design (1 hafta)
+    Development (2 hafta)
+    Testing (2 hafta)
+    Deployment (1 hafta)
+
+Kaynak Planlama:
+    VSCode - İnternetten bilgisayara yüklenebilir
+    Python - İnternetten bilgisyara yüklenebilir
+    Python kütüphaneleri ve dökümantasyonları - Kütüphaneler bilgisayara indirilebilir. Dökümantasyonlara internetten ulaşılabilir  
+    Github - İnternetten ulaşılabilir. Git yazılımı linux ortamında bulunur.
+    Dataset - İnternetten indirilebilir
+    Arayüzde kullanılan görsel kaynaklar - İnternetten indirilebilir
+
+Risk Yönetimi:
+
+
+İletişim Planı:
+    Haftalık toplantı ile ilerlemeyi paylaşma, test etme, ilerideki süreci planlama
+    Mesaj ve mail yoluyla haberleşme
+
+Değişiklik Yönetimi Planı:
+    Yapılacak değişikliklere haftalık toplantıda karar verilir ve nasıl yapılabileceği tartışılır.
+    Yapılacak değişiklikler implement edilir.
+
+Bütçe Planı:
+
+

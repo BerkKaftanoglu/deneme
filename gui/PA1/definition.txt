@@ -1,0 +1,46 @@
+Proje Adı: ¿Fake or Real?
+
+Proje Özeti:
+Bu proje son yıllarda oldukça popüler olan ve resim yaratabilen yapay zekaların kötüye kullanımının önüne geçmeyi amaçlamaktadır.
+Verilen bir resmin AI Made veya Human Made olduğunu tespit edebilecek yapay zeka modellerinin yanında güzel  bir arayüz ile geliyor.
+Uygulamamızın en önemli avantajlarından biri yerelde çalışması ve kullanıcının isteklerine veya kullanıcının geri dönüşlerine göre fine tune edilebiliyor olması.
+
+Hedefler:
+    1. Verilen görselin sahte veya gerçek olduğunu belirleme
+    2. Yapılan değerlendirmeleri dosya bilgisi ile bir geçmişte tutma
+    3. Sunulan modellerden seçilenleri kullanarak değerlendirme
+    4. Kullanıcının geri bildirimine bağlı modeli eğitme
+    5. csv dosyası aracılığıyla fine tuning yapma
+    6. Kullanıcıya kolaylık sağlayan fonksiyonel arayüz
+
+Kapsam:
+Proje üç farklı boyutta deep learning modelinden ve kullanıcı arayüzünden oluşmaktadır.
+Proje ".png", ".jpg" ve ".jpeg" uzantılı görselleri kabul eder. Fine tuning için ".csv" uzntılı dosyalar gereklidir. 
+Kullanılabilen modeller sunulan 3 modeli kapsar. Ancak modellerin eğitimine yerelde devam edilebilir.
+Kullanıcı arayüzünde resim yükleme, kullanılacak modelleri seçme, modeli/modelleri kullanarak tahmin ettirme ve sonucunu alma, önceden kullanılan resimlere erişme, 
+modeli eğitmek için geri bildirim, csv dosyası yükleyerek fine tuning ve tema değiştirme özellikleri vardır.
+
+Hedef Kitle:
+Proje herhangi bir görselin sahte olup olmadığını bilmek isteyen her kişinin kullanımı için tasralanmıştır.
+
+Teslim Edilebilirler:
+Son ürün ve dökümantasyonu (opsiyonel olarak test için bazı görseller verilebilir)
+
+Ana özellilker:
+    1. Kullanıcıdan görsel alma
+    2. Deep Learning modeli kullanarak tahmin yapma
+    3. Sonuçları gösterme ve geçmişe ekleme
+    4. Kullanıcının seçtiği modeli kullanma
+    5. Fine tuning ve geri bildirim ile modeli yerelde eğitme
+
+Bütçe ve Kaynaklar:
+Projenin kaynakları; modeli eğitmek ve gerekli kodları yazmak için bilgisayarlar, ekip üyeleri, VSCode ve Github gibi yazılımlar, gerekli python kütüphaneleri,
+kütüphanelerin dökümantasyonu, modelin eğitilmesinde kullanılan dataset, internetten alınan görsel kaynaklar ve projenin tamamlanması için gerekli zamandan oluşmaktadır.
+
+Projenin bütçesini belirleyecek olan ücretli bir servis veya benzeri bir araç kullanılmamaktadır.
+
+Riskler ve Önlemler:
+    
+
+Başarı Kriterleri:
+Projenin başarılı sayılması için görsel değerlendirmede %90 doğruluk oranına sahip olması ve kullanıcıların %95 oranında uygulama kullanımını kolay ve anlaşılır bulması istenmektedir.

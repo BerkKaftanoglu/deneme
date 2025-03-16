@@ -1,0 +1,48 @@
+Bu doküman Bil-481 dersinin projemiz olan "¿Fake or Real?" projesinin gereksinimlerini içerir.
+
+1. GUI: Pythonda "PyQt5" kütüphanesi kullanılarak tasarlanmış bir GUI.
+
+1.1. Kullanıcıdan resim alma:
+	1.1.1. Kullanıcı resimleri sürüklemek suretiyle sisteme input verebilir.
+	1.1.2. Kullanıcı resimleri dosyalarından seçmek suretiyle sisteme input verebilir.
+1.2. Animasyonlar:
+	1.2.1. Prediction yaparken düşünme animasyonu.
+	1.2.2. Prediction yapılırken oynatılan bir NN animasyonu
+	1.2.3. Uygulama açılırken oynatılacak açılış animasyonu.
+1.3. Yapılan tahminin sonuçlarını ekrana bastırma:
+	Verilen resimle ilgili tahmin sonuçlarının bir pop-up aracılığıyla kullanıcıya sunulması.
+1.4. Kullanıcının sorgu yaptığı resimler için tutulan bir geçmiş.
+	Geçmişin tutacağı bilgiler:
+	1. Resmin dosya yolu.
+	2. Sorgunun yapıldığı tarih ve saat.
+	3. Tahmin sonuçları.
+	4. Kullanılan model.
+1.5. Model seçme opsiyonu:
+	Kullanıcıya sunulan modeller arasından kullanıcıya model seçme opsiyonunun verilmesi.
+	Kullanıcının sistemine göre model önerme (GPU varsa büyük, yoksa orta ve küçük.).
+1.6. Fine tune etme opsiyonu:
+	1. Kullanıcının yerelindekei modeli bir csv dosyası aracılığıyla fine tune etme opsiyonu.
+	2. Aynı zamanda kullanıcının verdiği resimlerle ilgili geri dönüş alınıp modelin iyileştirilmesi opsiyonu.
+
+2. Verilen inputu işleyecek bir Deep Learning modeli:
+	Torch kütüphanesi aracılığıyla tanımlanmış ve resimlere dair çıkarım yapmak için eğitilmiş üç adet yapay zeka modeli:
+	1. Küçük model: parametre sayısı 5-6 milyonu geçmeyecek, küçük ama yüksek başarımlı bir NN.
+	2. Orta model: parametre sayısı 15-20 milyonu geçmeyecek, yüksek başarımlı bir NN.
+	3. Büyük model: parametre sayısı 40-50 milyon civarında, GPU'ya ihtiyaç duyan, yüksek başarımlı bir NN.
+
+
+2.1. Train Scripti:
+	Model eğitimi için script yazılacak. Bu script aynı zamanda eğitim detaylarını da ekrana bastırmalı.
+
+2.2. Test ve Validation Scriptleri:
+	Model eğitimi tamamlandıktan sonra modelin dış dünya görsellerinde elde ettiği başarımı ölçmek için kullanılacak scriptler.
+
+3. Dataset: 100 Bin civarında bir data seti oluşturulacak, bu set 3 parçadan oluşacak:
+	1. Train Dataset:
+		75 Binin üzerinde jpeg dosyalarından oluşan bir test seti toparlanacak ve labelleri bir csv dosyasına kaydedilecek.
+	2. Validation Dataset:
+		5 Bin civarında resim ile modelimizi dış dünya görselleri ile karşılaştırmadan önce validation yapacağımız set.
+	3. Test Dataset:
+		Modelimizin final evaluationunu yapacağımız set, yaklaşık 6 Bin resimden oluşuyor.
+		
+
